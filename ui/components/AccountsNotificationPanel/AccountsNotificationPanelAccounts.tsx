@@ -284,7 +284,6 @@ export default function AccountsNotificationPanelAccounts({
                           icon={`icons/m/${keyringData.icon}.svg`}
                           width={25}
                           color="var(--green-40)"
-                          hoverColor={`var(--${keyringData.color})`}
                         />
                       </button>
                     )}
@@ -448,7 +447,7 @@ export default function AccountsNotificationPanelAccounts({
       </style>
       <style global jsx>
         {`
-          .signing_btn:hover button {
+          .signing_btn:hover .icon {
             background-color: var(--${keyringData.color});
           }
         `}
